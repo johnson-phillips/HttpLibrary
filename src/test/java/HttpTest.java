@@ -4,9 +4,6 @@ import org.apache.http.util.EntityUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-/**
- * Created by johnson_phillips on 4/25/16.
- */
 public class HttpTest {
 
     HTTPRequest request = new HTTPRequest();
