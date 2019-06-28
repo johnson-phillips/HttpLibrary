@@ -53,22 +53,23 @@ public class HttpTest {
         }
     }
 
-    @Test
-    public void test()
-    {
-        OAuthService service = new ServiceBuilder()
-                .provider(SimpleOauth10.class)
-                .signatureType(org.scribe.model.SignatureType.QueryString)
-                .apiKey("api key")
-                .apiSecret("api secret")
-                .scope("API.Public")
-                .build();
-
-        OAuthRequest request = new OAuthRequest(Verb.GET,"url");
-
-
-        service.signRequest(OAuthConstants.EMPTY_TOKEN, request);
-        Response response = request.send();
-        System.out.println(response.getBody());
-    }
+//    @Test
+//    public void test()
+//    {
+//        OAuthService service = new ServiceBuilder()
+//                .provider(SimpleOauth10.class)
+//                .signatureType(org.scribe.model.SignatureType.QueryString)
+//                .apiKey("api key")
+//                .apiSecret("api secret")
+//                .scope("API.Public")
+//                .build();
+//
+//        OAuthRequest request = new OAuthRequest(Verb.GET,"url");
+//
+//
+//        service.signRequest(OAuthConstants.EMPTY_TOKEN, request);
+//        Response response = request.send();
+//
+//        System.out.println(response.getBody());
+//    }
 }
